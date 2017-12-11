@@ -6,13 +6,22 @@ from centrifugo.core import generate_token
 from app import jinja, app
 
 
+# 测试使用
 user_id = 'test_user'
 channel = 'news'
 
 
 class Index(BaseView):
+    """
+    接收消息
+    """
 
     async def get(self, request):
+        """
+        接收消息页面
+        :param request:
+        :return:
+        """
         connect_info = generate_token(app.config.CENTRIFUGO_SECRET, user_id)
         connect_info.update({'url': app.config.CENTRIFUGO_CLIENT_URL})
 
@@ -21,6 +30,11 @@ class Index(BaseView):
 
 
 class Send(BaseView):
+    """
+    发送消息
+    GET: 发送消息页面
+    POST: 发送消息
+    """
 
     async def get(self, request):
         return jinja.render('sender.html', request)

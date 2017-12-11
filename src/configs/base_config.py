@@ -10,8 +10,8 @@ WORKERS = 2
 DEBUG = True
 
 
-CENTRIFUGO_SECRET = 'pushiqiang1990'
-CENTRIFUGO_URL = 'http://45.77.198.211:9000'
+CENTRIFUGO_SECRET = 'test_scret'
+CENTRIFUGO_URL = 'http://localhost:9000'
 
 # https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html
 # If your Centrifugo server sits on domain centrifugo.example.com then:
@@ -20,4 +20,4 @@ CENTRIFUGO_URL = 'http://45.77.198.211:9000'
 # You can also set url to just http://centrifugo.example.com and javascript client will detect
 # which endpoint to use (SockJS or Websocket) automatically based on SockJS library availability.
 
-CENTRIFUGO_CLIENT_URL = 'http://45.77.198.211:9000'
+CENTRIFUGO_CLIENT_URL = 'http://localhost:9000'
