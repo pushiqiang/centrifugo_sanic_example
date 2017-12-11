@@ -1,0 +1,13 @@
+# server
+sanic==0.6.0
+
+sanic-cors
+sanic-jinja2 0.5.5
+
+
+# tools
+cent==2.1.0
+marshmallow==2.13.5
+aiohttp==2.2.5
+blinker==1.4
+

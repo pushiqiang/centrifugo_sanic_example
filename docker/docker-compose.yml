@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+  sanic_server:
+    build: ./sanic/
+    ports:
+      - 8008:8000
+    volumes:
+      - ../src:/opt/app
+
+    command: python runserver.py

@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  centrifugo_server:
+    restart: always
+    image: centrifugo/centrifugo
+    ports:
+      - "9000:8000"
+    volumes:
+      - ./:/centrifugo
+
+    command: centrifugo --config=config.json --admin --web

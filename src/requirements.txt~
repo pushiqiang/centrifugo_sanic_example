@@ -1,0 +1,14 @@
+# server
+sanic==0.6.0
+
+# unit test
+pytest==3.2.1
+
+# database
+aiocassandra==1.0.3
+cassandra-driver==3.11.0
+
+# tools
+marshmallow==2.13.5
+aiohttp==2.2.5
+blinker==1.4
